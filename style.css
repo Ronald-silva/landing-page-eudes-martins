@@ -1,0 +1,215 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    line-height: 1.6;
+}
+.logo img{
+    max-width: 20%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    
+}
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+   
+}
+
+header h1 {
+    text-align: left;
+    margin-left: -20rem;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 0.5rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+header a:hover{
+    background: #544d4d;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.hero {
+    background: #f4f4f4;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.hero .cta {
+    display: grid;
+    margin: 1rem;
+    padding: 0.5rem 1rem;
+    background: green;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+.service-item{
+    max-width: 100%;
+
+}
+.services, .about, .plans, .contact {
+    padding: 2rem 0;
+}
+.services img{
+    max-width: 100%;
+    border-radius: 5px;
+}
+.services h2, .about h2, .plans h2, .contact h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.service-list, .plan-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.service-item, .plan-item {
+    background: #f4f4f4;
+    padding: 1rem;
+    margin: 1rem;
+    width: 30%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.service-item h3, .plan-item h3 {
+    margin-bottom: 0.5rem;
+}
+
+.plan-item ul {
+    list-style: none;
+    padding-left: 0;
+}
+.plans .plan-list{
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr;
+    
+}
+.plans .planitem{
+    background: rgb(166, 185, 242);
+    padding: 1rem;
+    margin: 1rem;
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.plan-item ul li {
+    margin-bottom: 0.5rem;
+}
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header{
+        font-size: 12px;
+        
+    }
+    ul{
+        display: flex;
+    }
+    .logo{
+        width: 30px;
+    }
+    .container {
+        width: 90%;
+    }
+
+    .service-item, .plan-item {
+        width: 100%;
+        text-align: center;
+    }
+    .plans .container{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+    }
+    .plans .plan-list{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-left: 3rem;
+    }
+    .plans .plan-list .planitem{
+        max-width: 100%;
+        justify-content: center;
+
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    .service-item, .plan-item {
+        width: 90%;
+        margin: 0.5rem 0;
+    }
+    .plans .plan-list{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        
+    }
+
+    .hero {
+        padding: 1rem 0;
+    }
+
+    .hero h2 {
+        font-size: 1.5rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .hero .cta {
+        padding: 0.5rem;
+        font-size: 1rem;
+    }
+}
