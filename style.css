@@ -144,8 +144,6 @@ header nav ul li a {
     50% { background-position: 400% 0; }
     100% { background-position: 0 0; }
 }
-
-    
 .services, .about, .plans {
     padding: 60px 0;
 }
@@ -242,7 +240,7 @@ footer {
    header ul{
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 20px;
    }
     .hero h2 {
         font-size: 1.8em;
