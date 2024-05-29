@@ -19,13 +19,14 @@ body {
 header {
     background: royalblue;
     color: #fff;
-    padding: 20px 0;
+    padding: 10px 0;
     
 }
-header .container ul{
+header .container {
     display: flex;
     justify-content: space-between;
-    margin-top:0.8rem;
+    align-items: center;
+   
     
 }
 header a:hover{
@@ -78,7 +79,6 @@ header nav ul li a {
 
 .hero .cta {
     display: grid;
-    color: white;
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 10px;
@@ -92,9 +92,12 @@ header nav ul li a {
     cursor: pointer;
     position: relative;
     z-index: 0;
-    border-radius: 10px;
+    
 }
-
+.hero .cta:hover{
+    color:#333;
+    font-size: larger;
+}
 .hero .cta:before {
     content: '';
     background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
@@ -141,6 +144,7 @@ header nav ul li a {
     50% { background-position: 400% 0; }
     100% { background-position: 0 0; }
 }
+
     
 .services, .about, .plans {
     padding: 60px 0;
@@ -206,9 +210,10 @@ footer {
         text-align: center;
     }
 
-    header nav ul li {
-        display: block;
-        
+    header nav ul  {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
         margin: 10px 0;
     }
 
@@ -221,13 +226,19 @@ footer {
     }
 }
 
-@media (max-width: 480px) {
-    header ul{
-        display: flex;
+@media (max-width: 600px) {
+    header .container{
+        display: block;
+        flex-direction: row;
         align-items: center;
         justify-content:space-between;
         
     }
+   header ul{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+   }
     .hero h2 {
         font-size: 1.8em;
     }
