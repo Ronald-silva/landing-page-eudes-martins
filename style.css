@@ -225,8 +225,8 @@ footer {
     header ul{
         display: flex;
         align-items: center;
-        justify-content: center;
-        flex-direction: column;
+        justify-content:space-between;
+        
     }
     .hero h2 {
         font-size: 1.8em;
